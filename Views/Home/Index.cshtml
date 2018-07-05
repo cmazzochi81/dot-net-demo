@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "TheCorridorGroupMD Home";
+}
+
+<div class="jumbotron">
+
+    <h1>@Page.Title</h1>
+    <p id="headerText">Do you need to sell your house quickly? The Corridor Group will buy your house in as few as 14 days!!</p>
+    <p id="subTagLineText"> Call  <strong>(240) 200-9545</strong> NOW to receive an offer on your house!</p>
+    
+    <div class="row">
+        <div class="col-md-3 margin-top-20">
+            <h2>Register</h2>
+           <!--<p>Register. </p>-->
+            <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>  
+        </div>
+
+        <div class="col-md-3 margin-top-20">
+            <h2>Login</h2>
+            <!--<p>Login To Your Account</p>-->
+            <p>@Html.ActionLink("Log in", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+        </div>
+
+        <div class="col-md-3 margin-top-20">
+            <h2>Create</h2>
+           <!--<p>Create An Account</p>-->
+            <p>@Html.ActionLink("Create Account", "Create", "Account", null, new { @class = "btn btn-default" })</p>
+        </div>
+
+        <div class="col-md-3 margin-top-20">
+            <h2>Contact</h2>
+            <!--<p>Contact Us</p>-->
+            <p>@Html.ActionLink("Contact Us", "Contact", "Account", null, new { @class = "btn btn-default" })</p>
+        </div>
+    </div>  
+</div><!--End jumbotron-->
+
+<div class="row">
+    <div class="col-md-3">
+        <h2>Cost</h2>
+        We pay all standard closing costs
+        <!--<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>-->
+    </div>
+    <div class="col-md-3">
+        <h2>No Agent Involved</h2>
+        No real estate agent, saving you up to 6.5% in commissions
+    </div>
+    <div class="col-md-3">
+        <h2>Transaction Management</h2>
+        We handle the transaction and are available to answer any questions along the way. 
+    </div>
+    <div class="col-md-3">
+        <h2>Successful Outcomes</h2>
+        You walk away with cash for your unwanted house. 
+    </div>
+</div>
+@section scripts{
+    <script>var testing ="true"</script>
+    
+    }
+
+@{
+    var amounts = new List<Decimal> { 100, 25.50m, -40, 275.99m };
+}
+
+<ul>
+    @foreach (decimal amount in amounts)
+    {
+        <li>@formatAmount(amount)</li>
+        
+
+    }
+</ul>
+
+@helper formatAmount(decimal amount)
+{
+var color = "green";
+
+if (amount < 0)
+{
+    color = "red";
+}
+    <!--Formating a currency for the default culture. Then, anywhere on the page,
+        even above the helper method declaration, -->
+
+    <span style="color:@color">@String.Format("{0:c}", amount)</span>
+}
+

@@ -1,0 +1,155 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+/*.imageDiv{
+    margin-top:20px;
+    border: 1px solid red;
+    
+}*/
+
+.affix {
+    /*top:50px;*/
+    position: relative;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    /*border: 2px solid red;*/
+}
+
+.tagText {
+    float: left;
+    margin-left: 14.5%;
+    margin-top: 40px;
+}
+
+.jumbotron {
+    margin-top: 110px;
+    background-color: #E3F0BA;
+}
+
+.register {
+    margin-left: 17%;
+}
+
+.contact {
+    margin-left: 1.5%;
+}
+
+.login {
+    margin-left: -3.75%
+}
+
+.tagline {
+    /*border: 2px solid yellow;*/
+    margin-top: 40px;
+}
+
+.registerHeading {
+    width: 50%;
+    margin-left: 40px;
+}
+
+.contact {
+    margin-left: 1.5%;
+}
+
+footer {
+    text-align: center;
+}
+
+.spriteDivs {
+    height: 150px;
+    width: 150px;
+}
+
+.icon-cols h2{
+    text-align: center;
+}
+
+.icon-cols p{
+    font-size: 12pt;
+    text-align: center;
+}
+#noClosingCosts {
+    /*background: url('Images/finance-icons.png') 650px 780px;*/
+    background: url('Images/noClosingCosts.png') #fff 10px 22px no-repeat;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+#noAgent {
+    background: url('Images/noAgent.png') #fff 25px 25px no-repeat;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+#transactionManagement {
+    background: url('Images/transactionManagement.png') #fff 1px 30px no-repeat;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+#successfulOutcomes {
+    background: url('Images/finance-icons.png') 530px 915px;
+    border: 2px solid #000;
+    margin: 0 auto;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 374px) {
+    .body-content {
+        padding-left: 0px;
+    }
+}
+
+@media only screen and (device-width: 768px) {
+
+	.tagText {
+	    float: left;
+	    margin-left:0px;
+	    margin-top: 40px;
+	}
+
+	.jumbotron{
+		margin-top:10px;
+	}
+
+	/*.img-responsive{
+		margin-left:4% !important;
+	}*/
+	
+}
+
+@media only screen and (min-width: 1200px){
+    .affix{
+        padding-left:8%;
+    }
+
+
+    }
